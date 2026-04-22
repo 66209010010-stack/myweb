@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>ใบงานที่ 4</title>
+
+<style>
+body {
+    font-family: Tahoma;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+img {
+    width: 600px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>ใบงานที่ 4</h2>
+<h3>การใช้ Link Map</h3>
+
+<!-- รูปวัด -->
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Wat_Benjamabophit1.jpg/1280px-Wat_Benjamabophit1.jpg" usemap="#workmap">
+
+<!-- map -->
+<map name="workmap">
+
+    <!-- 🔴 วงกลม (ประตู) -->
+    <area shape="circle" coords="300,300,40"
+          href="pic1.jpg">
+
+    <!-- 🔺 สี่เหลี่ยม (ยอดหลังคา) -->
+    <area shape="rect" coords="280,80,330,130"
+          href="https://www.google.com" target="_blank">
+
+    <!-- 🔷 หลายเหลี่ยม (บันได) -->
+    <area shape="poly" coords="230,420,370,420,330,500,270,500"
+          href="work1.html">
+
+</map>
+
+</body>
+</html>

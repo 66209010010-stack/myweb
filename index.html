@@ -2,111 +2,148 @@
 <html lang="th">
 <head>
 <meta charset="UTF-8">
-<title>Web รวมงานรายวิชา</title>
+<title>เที่ยวเลย</title>
 
 <style>
 body {
     font-family: Tahoma;
-    background-color: #f2f2f2;
-}
-
-table {
-    width: 900px;
-    margin: auto;
-    border-collapse: collapse;
     text-align: center;
+    background:#f2f2f2;
 }
 
-td {
-    border: 1px solid #ccc;
-    vertical-align: top;
-}
-
-/* แบนเนอร์ */
-.banner img {
-    width: 100%;
-}
-
-/* ปุ่มเมนู */
+/* เมนู */
 .menu a {
-    display: block;
-    background: #ffcc80;
-    border-radius: 15px;
-    padding: 10px;
-    margin: 10px;
-    text-decoration: none;
-    color: black;
-    box-shadow: 2px 2px 5px gray;
+    margin:10px;
+    padding:10px 20px;
+    background:#ffcc80;
+    border-radius:10px;
+    text-decoration:none;
+    color:black;
+    display:inline-block;
+    transition:0.3s;
 }
 
 .menu a:hover {
-    background: #ffb74d;
+    background:#ffb84d;
+    transform: scale(1.1);
 }
 
-.menu img {
-    width: 100px;
+/* การ์ดสถานที่ */
+.place {
+    display:inline-block;
+    margin:15px;
+    background:white;
+    padding:10px;
+    border-radius:15px;
+    box-shadow:2px 2px 10px gray;
+    transition:0.3s;
 }
 
-.menu p {
-    margin: 5px;
+.place:hover {
+    transform: translateY(-5px);
 }
 
-/* กลาง */
-.center img {
-    width: 300px;
+/* รูป */
+.place img {
+    width:220px;
+    height:150px;
+    object-fit:cover;
+    border-radius:10px;
 }
 
-/* footer */
-.footer {
-    background-color: #ffcce0;
-    padding: 10px;
+/* ข้อความ */
+.place p {
+    font-weight:bold;
+    margin-top:8px;
+}
+
+hr {
+    width:70%;
+}
+
+/* ปุ่มกลับ */
+.back {
+    display:inline-block;
+    margin-top:20px;
+    padding:10px 20px;
+    background:#ffcc80;
+    border-radius:10px;
+    text-decoration:none;
+    color:black;
+    transition:0.3s;
+}
+
+.back:hover {
+    background:#ffb84d;
 }
 </style>
-
 </head>
 
 <body>
 
-<table>
+<h2>เชิญชวนมาท่องเที่ยว</h2>
+<h3>จังหวัดเลย</h3>
 
-<tr>
-<td colspan="3" class="banner">
-<img src="https://img2.pic.in.th/cc4e77b8c3fb2dfc6f5897f247020262.png">
-</td>
-</tr>
+<p>พัฒนาโดย นางสาว นิศาชล จันทร์สว่าง</p>
 
-<tr>
+<div class="menu">
+    <a href="index.html">Home</a>
+    <a href="resort.html">Resort</a>
+    <a href="contact.html">Contact</a>
+    <a href="detail.html">รายละเอียดและข้อมูล</a>
+</div>
 
-<!-- ซ้าย -->
-<td class="menu">
-<a href="index.html"><img src="home_button.png"><p>Home</p></a>
-<a href="work1.html"><img src="work1.png"><p>งานที่ 1</p></a>
-<a href="work2.html"><img src="work2.png"><p>งานที่ 2</p></a>
-</td>
+<hr>
 
-<!-- กลาง -->
-<td class="center">
-<h2>Welcome To My Web</h2>
-<img src="https://i.pinimg.com/736x/ba/54/f1/ba54f1684c45b249a87d9da49a1a0359.jpg">
-</td>
-
-<!-- ขวา -->
-<td class="menu">
-<a href="work3.html"><img src="work3.png"><p>งานที่ 3</p></a>
-<a href="work4.html"><img src="work4.png"><p>งานที่ 4</p></a>
-<a href="travel/index.html"><img src="work6.png"><p>งานที่ 5</p>
+<!-- แถว 1 -->
+<div class="place">
+<a href="detail1.html">
+<img src="https://upload.wikimedia.org/wikipedia/commons/2/27/Lom_Sak_Cliff_%28I%29.jpg">
+<p>ภูกระดึง</p>
 </a>
-</td>
+</div>
 
-</tr>
+<div class="place">
+<a href="detail2.html">
+<img src="https://f.ptcdn.info/256/068/000/q659swqfuHYVyYBaXMH-o.jpg">
+<p>เชียงคาน</p>
+</a>
+</div>
 
-<tr>
-<td colspan="3" class="footer">
-Contact : 66209010010@loeitech.ac.th
-</td>
-</tr>
+<div class="place">
+<a href="detail3.html">
+<img src="https://www.dailynews.co.th/wp-content/uploads/2025/09/S__40616228_0-1280x960.jpg">
+<p>ภูเรือ</p>
+</a>
+</div>
 
-</table>
+<br>
+
+<!-- แถว 2 -->
+<div class="place">
+<a href="detail4.html">
+<img src="https://www.numsuay.go.th/UserFiles/Image/2021/Im/245692570_4482899905135183_2318928979284561674_n.jpg">
+<p>ภูผาล้อม</p>
+</a>
+</div>
+
+<div class="place">
+<a href="detail5.html">
+<img src="https://s.isanook.com/tr/0/ui/286/1434209/T2.jpg">
+<p>ภูบ่อบิด</p>
+</a>
+</div>
+
+<div class="place">
+<a href="detail6.html">
+<img src="https://static.trueplookpanya.com/cmsblog/2319/50319/banner_file.jpg">
+<p>ภูหลวง</p>
+</a>
+</div>
+
+<br><br>
+
+<a href="../index.html" class="back">⬅ กลับหน้าเว็บหลัก</a>
 
 </body>
 </html>

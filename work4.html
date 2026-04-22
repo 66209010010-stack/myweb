@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>แบบฟอร์ม</title>
+
+<style>
+body {
+    font-family: Tahoma;
+    background-color: #f2f2f2;
+}
+
+.box {
+    width: 700px;
+    margin: auto;
+    border: 2px solid black;
+    padding: 20px;
+    background-color: #e6e6e6;
+}
+
+input, select, textarea {
+    margin: 5px;
+    padding: 5px;
+}
+
+textarea {
+    width: 400px;
+    height: 80px;
+}
+
+.button {
+    padding: 8px 20px;
+    margin: 10px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="box">
+
+<!-- 🔥 เพิ่ม form -->
+<form>
+
+<p>* ชื่อ : <input type="text" name="fname"></p>
+
+<p>* นามสกุล : <input type="text" name="lname"></p>
+
+<p>พิมพ์รหัสผ่าน * : <input type="password" name="pass" style="width:250px;"></p>
+
+<p>เพศ * :
+    <input type="radio" name="gender"> ชาย
+    <input type="radio" name="gender"> หญิง
+</p>
+
+<p>วันเกิด * :
+    <select name="day">
+        <option>วัน</option>
+        <script>
+            for(let i=1;i<=31;i++){
+                document.write("<option>"+i+"</option>");
+            }
+        </script>
+    </select>
+
+    <select name="month">
+        <option>เดือน</option>
+        <option>มกราคม</option>
+        <option>กุมภาพันธ์</option>
+        <option>มีนาคม</option>
+        <option>เมษายน</option>
+        <option>พฤษภาคม</option>
+        <option>มิถุนายน</option>
+        <option>กรกฎาคม</option>
+        <option>สิงหาคม</option>
+        <option>กันยายน</option>
+        <option>ตุลาคม</option>
+        <option>พฤศจิกายน</option>
+        <option>ธันวาคม</option>
+    </select>
+
+    <select name="year">
+        <option>ปี</option>
+        <script>
+            for(let i=2535;i<=2568;i++){
+                document.write("<option>"+i+"</option>");
+            }
+        </script>
+    </select>
+</p>
+
+<p>ที่อยู่ :<br>
+<textarea name="address"></textarea>
+</p>
+
+<p>
+<input type="checkbox"> ต้องการรับข่าวสาร
+</p>
+
+<p>รู้จักเว็บไซต์ it.com จากที่ไหน</p>
+
+<p>
+<input type="checkbox"> โทรทัศน์
+<input type="checkbox"> Instagram
+<input type="checkbox"> Line
+</p>
+
+<p>
+<input type="checkbox"> Facebook
+<input type="checkbox"> เพื่อน
+<input type="checkbox"> Email
+</p>
+
+<p>
+<input type="checkbox"> อื่น ๆ 
+<input type="text">
+</p>
+
+<center>
+<!-- 🔥 เปลี่ยนปุ่ม -->
+<input type="submit" value="ส่งข้อมูล" class="button">
+<input type="reset" value="ล้างข้อมูล" class="button">
+</center>
+
+</form>
+
+</div>
+
+</body>
+</html>
